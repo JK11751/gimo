@@ -2,6 +2,7 @@ import { React } from 'react';
 import { FaFacebook, FaTwitter } from 'react-icons/fa';
 import { useNavigate } from "react-router-dom";
 import { SiLinkedin, SiGithub } from 'react-icons/si';
+import john from "./Images/gimasejohn.jpg";
 import {
   Box,
   Flex,
@@ -70,7 +71,7 @@ const Header=()=>{
                   minW={0}>
                   <Avatar
                     size={'lg'}
-                    src={'https://bit.ly/sage-adebayo'}
+                    src={john}
                   />
                 </MenuButton>
                 <MenuList alignItems={'center'}>
@@ -78,7 +79,7 @@ const Header=()=>{
                   <Center>
                     <Avatar
                       size={'xl'}
-                      src={'https://bit.ly/sage-adebayo'}
+                      src={john}
                     />
                   </Center>
                   <br />

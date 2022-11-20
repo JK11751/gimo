@@ -22,7 +22,7 @@ const App=()=> {
         <Route exact path='/testimonials' element={<Testimonials />} />
         <Route exact path='/contact' element={<Contact />} />
         <Route exact path='/about' element={""} />
-        <Route exact path='/testimonials' element={<NotFound/>} />
+        <Route exact path='/error' element={<NotFound/>} />
         </Routes>
         <Footer/>
       </Router>

@@ -6,7 +6,6 @@ import Header from '../Header';
 const NotFound = () => {
   return (
     <>
-      <Header />
       <Center>
         <Box mt="60px" alignSelf="center" textAlign="center"  px={6}>
         {/* <Text fontSize="18px" mt={3} mb={2}>
