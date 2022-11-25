@@ -19,7 +19,7 @@ import Lower from './subs/Lower';
             fontWeight={600}
             fontSize={{ base: '3xl', sm: '4xl', md: '6xl' }}
             lineHeight={'20%'}>
-            Kerario John{' '}
+            I am {' '}
             <Text as={'span'} color={'orange.400'}>
             FullStack Developer
             </Text>

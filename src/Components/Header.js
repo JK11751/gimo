@@ -16,10 +16,11 @@ import {
   MenuDivider,
   useColorModeValue,
   HStack,
+  IconButton,
   useColorMode,
   Center,
 } from '@chakra-ui/react';
-import { MoonIcon, SunIcon } from '@chakra-ui/icons';
+import { MoonIcon, SunIcon, AddIcon, HamburgerIcon,EditIcon,ExternalLinkIcon,RepeatIcon } from '@chakra-ui/icons';
 
 const NavLink = ({ children}) => (
   <Link
@@ -48,7 +49,29 @@ const Header=()=>{
               as={'nav'}
               spacing={4}
               display={{ base: 'none', md: 'flex' }}>
-             <NavLink onClick={() => navigate("/")}>Home</NavLink>
+              <Menu>
+  <MenuButton
+    as={IconButton}
+    aria-label='Options'
+    icon={<HamburgerIcon />}
+    variant='outline'
+  />
+  <MenuList>
+    <MenuItem icon={<AddIcon />} command=''>
+      New Tab
+    </MenuItem>
+    <MenuItem icon={<ExternalLinkIcon />} command=''>
+      New Window
+    </MenuItem>
+    <MenuItem icon={<RepeatIcon />} command="">
+      Open Closed Tab
+    </MenuItem>
+    <MenuItem icon={<EditIcon />} command=''>
+      Open File...
+    </MenuItem>
+  </MenuList>
+</Menu>
+            <NavLink onClick={() => navigate("/")}>Home</NavLink>
              <NavLink onClick={() => navigate("/projects")}>Projects</NavLink>
              <NavLink>Skills</NavLink>
              <NavLink>Resume</NavLink>
