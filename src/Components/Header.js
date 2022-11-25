@@ -1,6 +1,6 @@
 import { React } from 'react';
 import { FaFacebook, FaTwitter } from 'react-icons/fa';
-import { useNavigate } from "react-router-dom";
+//import { useNavigate } from "react-router-dom";
 import { SiLinkedin, SiGithub } from 'react-icons/si';
 import john from "./Images/gimasejohn.jpg";
 import {
@@ -39,7 +39,6 @@ const NavLink = ({ children}) => (
 const Header=()=>{
   const { colorMode, toggleColorMode } = useColorMode();
   //const { isOpen, onOpen, onClose } = useDisclosure();
-  const navigate = useNavigate();
   return (
     <>
       <Box bg={useColorModeValue('gray.100', 'gray.900')} px={4}>
@@ -71,11 +70,11 @@ const Header=()=>{
     </MenuItem>
   </MenuList>
 </Menu>
-            <NavLink onClick={() => navigate("/")}>Home</NavLink>
-             <NavLink onClick={() => navigate("/projects")}>Projects</NavLink>
+            <NavLink >Home</NavLink>
+             <NavLink >Projects</NavLink>
              <NavLink>Skills</NavLink>
              <NavLink>Resume</NavLink>
-             <NavLink onClick={() => navigate("/testimonials")}>Testimonials</NavLink>
+             <NavLink >Testimonials</NavLink>
              <NavLink>Contact</NavLink>
              <NavLink>About</NavLink>
             </HStack>

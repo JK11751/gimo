@@ -7,6 +7,7 @@ import {
     Button
   } from '@chakra-ui/react';
 import Lower from './subs/Lower';
+
   const Home=()=> {
     return (
       <Container maxW={'5xl'}  >

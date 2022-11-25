@@ -1,33 +1,31 @@
 import React from 'react';
-import { BrowserRouter as Router } from 'react-router-dom';
 import { ChakraProvider,theme} from '@chakra-ui/react';
 import Footer from './Components/Footer';
 import Header from './Components/Header';
-import ProjectCard from './Components/Cards/ProjectCard';
+import Home from './Components/Home/Home';
+import Skills from './Components/Skills/Skills';
+import Testimonial from './Components/Testimonials/Testimonials';
+import Contact from './Components/Contact/Contact';
+import Project from './Components/Projects/Project';
+//import Skills from './Components/Skills/Skills';
+//import testimonials from './Components/Data/TestimonialsList';
+//import Testimonial from './Components/Testimonials/Testimonials';
+//import Testimonials from './Components/Data/TestimonialsList';
+
 
 
 const App=()=> {
   return (
     <>
     <ChakraProvider theme={theme}>
-    <Router>
     <Header/>
-    <ProjectCard/> 
-    {/*
-        <Routes>
-        <Route index element={<Home />} />
-        <Route exact path='/projects' element={""} />
-        <Route exact path='/skills' element={""} />
-        <Route exact path='/resume' element={""} />
-        <Route exact path='/testimonials' element={<Testimonials />} />
-        <Route exact path='/contact' element={<Contact />} />
-        <Route exact path='/about' element={""} />
-        <Route exact path='/skills' element={<Skills/>} />
-        <Route exact path='/error' element={<NotFound/>} />
-        </Routes>*/}
-        <Footer/>
-      </Router>
-      </ChakraProvider>
+    <Home/>
+    <Skills/>
+    <Project/>
+    <Testimonial/>
+    <Contact/>
+    <Footer/>
+    </ChakraProvider>
     </>
   );
 }
