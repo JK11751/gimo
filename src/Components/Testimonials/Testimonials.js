@@ -14,29 +14,12 @@ const Testimonial = () => {
   return (
     <Flex padding={10}
       textAlign={"center"}
-      pt={5}
+      pt={1}
       justifyContent={'enter'}
       direction={'column'}
       width={'full'}>
-      <Box width={{ base: 'full', sm: 'lg', lg: 'xl' }} margin={'auto'}>
-        <chakra.h3
-          fontFamily={'Work Sans'}
-          fontWeight={'bold'}
-          fontSize={20}
-          textTransform={'uppercase'}
-          color={'purple.400'}>
-          People love us
-        </chakra.h3>
-        <chakra.h1
-          py={5}
-          fontSize={48}
-          fontFamily={'Work Sans'}
-          fontWeight={'bold'}
-          color={useColorModeValue('gray.700', 'gray.50')}>
-          You're in good company
-        </chakra.h1>
+      <Box width={{ base: 'full', sm: 'lg', lg: 'xl' }} >
         <chakra.h2
-          margin={'auto'}
           width={'70%'}
           fontFamily={'Inter'}
           fontWeight={'medium'}

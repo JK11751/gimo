@@ -1,4 +1,5 @@
 import { React } from 'react';
+//import { useNavigate } from 'react-router-dom';
 import { FaFacebook, FaTwitter } from 'react-icons/fa';
 //import { useNavigate } from "react-router-dom";
 import { SiLinkedin, SiGithub } from 'react-icons/si';
@@ -16,71 +17,51 @@ import {
   MenuDivider,
   useColorModeValue,
   HStack,
-  IconButton,
   useColorMode,
   Center,
 } from '@chakra-ui/react';
-import { MoonIcon, SunIcon, AddIcon, HamburgerIcon,EditIcon,ExternalLinkIcon,RepeatIcon } from '@chakra-ui/icons';
+import { MoonIcon, SunIcon} from '@chakra-ui/icons';
 
 const NavLink = ({ children}) => (
   <Link
     px={2}
     py={1}
-    rounded={'md'}
+    rounded={'md'} 
     _hover={{
       textDecoration: 'none',
       bg: useColorModeValue('gray.200', 'gray.700'),
     }}
-    href={'#'}>
+    href={''}>
     {children}
   </Link>
 );
 
 const Header=()=>{
   const { colorMode, toggleColorMode } = useColorMode();
-  //const { isOpen, onOpen, onClose } = useDisclosure();
+  //const navigate = useNavigate();
+ // const { isOpen, onOpen, onClose } = useDisclosure();
   return (
     <>
       <Box bg={useColorModeValue('gray.100', 'gray.900')} px={4}>
         <Flex h={16} alignItems={'center'} justifyContent={'space-between'}>
         <HStack spacing={8} alignItems={'center'}>
-            <HStack
-              as={'nav'}
-              spacing={4}
-              display={{ base: 'none', md: 'flex' }}>
-              <Menu>
-  <MenuButton
-    as={IconButton}
-    aria-label='Options'
-    icon={<HamburgerIcon />}
-    variant='outline'
-  />
-  <MenuList>
-    <MenuItem icon={<AddIcon />} command=''>
-      New Tab
-    </MenuItem>
-    <MenuItem icon={<ExternalLinkIcon />} command=''>
-      New Window
-    </MenuItem>
-    <MenuItem icon={<RepeatIcon />} command="">
-      Open Closed Tab
-    </MenuItem>
-    <MenuItem icon={<EditIcon />} command=''>
-      Open File...
-    </MenuItem>
-  </MenuList>
-</Menu>
-            <NavLink >Home</NavLink>
+            <HStack 
+               spacing="5vw" 
+               display={["none", "none", "flex", "flex"]}
+              as={'nav'}>
+            <NavLink>Home</NavLink>
              <NavLink >Projects</NavLink>
              <NavLink>Skills</NavLink>
              <NavLink>Resume</NavLink>
              <NavLink >Testimonials</NavLink>
              <NavLink>Contact</NavLink>
              <NavLink>About</NavLink>
+             </HStack>
             </HStack>
-          </HStack>
-          <Flex alignItems={'center'}>
-            <Button onClick={toggleColorMode}>
+          <Flex alignItems={'center'} >
+          
+            <Button onClick={toggleColorMode}
+                   >
                 {colorMode === 'light' ? <MoonIcon /> : <SunIcon />}
               </Button>
               <Menu>
@@ -104,6 +85,7 @@ const Header=()=>{
                       src={john}
                     />
                   </Center>
+                 
                   <br />
                   <Center>
                     <p  fontWeight={600} 

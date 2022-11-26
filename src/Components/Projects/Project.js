@@ -7,8 +7,8 @@ import  ProjectList from '../Data/ProjectList';
 const Project = () => {
     return(
       <Box>
-      <SimpleGrid columns={{ base: 1, sm: 2 }}
-        spacing={'5'}
+      <SimpleGrid columns={[2, null, 3]}
+       spacing={'40px'}
         mt={5}
         mx={'auto'}>
       {ProjectList.map(project => (
