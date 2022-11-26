@@ -1,4 +1,4 @@
-import testimonials from '../Data/TestimonialsList';
+import testimonials from '../../Utils/constants/TestimonialsList';
 import TestimonialCard from '../Cards/TestimonialCard';
 import { React } from 'react';
 import {

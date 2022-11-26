@@ -1,7 +1,8 @@
 import React from 'react';
 import { Box, SimpleGrid } from '@chakra-ui/react'
 import ProjectCard from '../Cards/ProjectCard';
-import  ProjectList from '../Data/ProjectList';
+//import  ProjectList from '../../Utils/constants/ProjectList';
+import ProjectList from '../../Utils/constants/ProjectList';
 
 
 const Project = () => {

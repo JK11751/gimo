@@ -1,5 +1,5 @@
 import React from "react";
-import backgrounds from "../Data/backgrounds";
+import backgrounds from "../../Utils/constants/backgrounds";
 import {
     Avatar,
     chakra,
