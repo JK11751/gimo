@@ -144,7 +144,7 @@ const LandingPage=()=> {
             _hover={{ bg: 'orange.500' }}>
             Get started
           </Button>
-          <Button rounded={'full'} px={6}>
+          <Button rounded={'full'} px={4}>
             <Resume/>
           </Button>
         </Stack>
