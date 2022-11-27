@@ -4,10 +4,8 @@ import { React } from 'react';
 import {
   Box,
   Flex,
-  chakra,
   SimpleGrid,
   Icon,
-  useColorModeValue,
 } from '@chakra-ui/react';
 
 const Testimonial = () => {
@@ -18,19 +16,6 @@ const Testimonial = () => {
       justifyContent={'enter'}
       direction={'column'}
       width={'full'}>
-      <Box width={{ base: 'full', sm: 'lg', lg: 'xl' }} >
-        <chakra.h2
-          width={'70%'}
-          fontFamily={'Inter'}
-          fontWeight={'medium'}
-          color={useColorModeValue('gray.500', 'gray.400')}>
-          See what{' '}
-          <chakra.strong color={useColorModeValue('gray.700', 'gray.50')}>
-            my teams, collaborators and clients
-          </chakra.strong>{' '}
-          talk about me
-        </chakra.h2>
-      </Box>
       <SimpleGrid
         columns={{ base: 1, xl: 2 }}
         spacing={'20'}

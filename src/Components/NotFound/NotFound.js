@@ -1,5 +1,5 @@
 import { Box, Heading, Text, Button, Center, Image } from '@chakra-ui/react';
-import error from "../Images/404Error.png"
+import error from "../../Images/404Error.png"
 import { Link } from 'react-router-dom';
 
 const NotFound = () => {

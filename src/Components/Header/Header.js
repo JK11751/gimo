@@ -31,7 +31,7 @@ const Header = () => {
 
 	const navigateHome = () => {
 		if (isMobile) {
-    		document.getElementById('skills').scrollIntoView({ behavior: 'smooth' });
+    		document.getElementById('about').scrollIntoView({ behavior: 'smooth' });
 		} else {
 			navigate('/');
 		}
@@ -49,7 +49,7 @@ const Header = () => {
 		>
 			<HStack justifyContent={{ base: 'space-between', md: 'space-around' }}>
 				<Box cursor='pointer' onClick={navigateHome}>
-					<Text>&lt;GimaseJohn /&gt;</Text>
+					<Text>Logo</Text>
 				</Box>
 
 				<HStack justifyContent='space-between' spacing={{ base: 4, md: 12 }}>

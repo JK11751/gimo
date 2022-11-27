@@ -1,8 +1,8 @@
 import { useColorModeValue } from '@chakra-ui/color-mode';
 import { Image } from '@chakra-ui/image';
 import { Box,Stack, Text } from '@chakra-ui/layout';
-//import useDocumentTitle from '../hooks/useDocumentTitle';
-//import { SKILLS } from '../utils/constants';
+
+
 const SkillCard = ({ label, icon }) => {
 	return (
 		<Box
@@ -21,7 +21,7 @@ const SkillCard = ({ label, icon }) => {
 			}}
 		>
 			<Stack direction='row' align='center' spacing={3}>
-				<Image boxSize='50px' src={`/images/${icon}`} alt={icon} loading='lazy' />
+				<Image boxSize='50px' src={{icon}}  loading='lazy' />
 				<Text>{label}</Text>
 			</Stack>
 		</Box>

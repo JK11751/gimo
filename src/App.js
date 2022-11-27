@@ -6,10 +6,10 @@ import {
   Route
 } from "react-router-dom";
 import Footer from './Components/Footer';
-import Skill from './Components/Skills/subs/Skill';
-//import Skills from './Components/Skills/Skills';
+//import Header from './Components/Header';
+import Header from  './Components/Header/Header'
+import Skills from './Components/Skills/Skills';
 import Testimonial from './Components/Testimonials/Testimonials';
-import Header from './Components/Header/Header'
 import Contact from './Components/Contact/Contact';
 import Project from './Components/Projects/Project';
 import Home from './Components/Home/Home';
@@ -28,7 +28,7 @@ const App=()=> {
     />
     <Route path="testimonials" element={<Testimonial/>} />
   <Route path="contact" element={<Contact/>} />
-  <Route path="skills" element={<Skill/>} />
+  <Route path="skills" element={<Skills/>} />
 </Routes>
 <Footer/>
 </Router>

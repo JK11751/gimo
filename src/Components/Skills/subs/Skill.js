@@ -4,6 +4,7 @@ import { Box, Center, SimpleGrid, Text } from '@chakra-ui/layout';
 //import useDocumentTitle from '../hooks/useDocumentTitle';
 import { SkillsList } from '../../../Utils/constants/SkillsList';
 import SkillCard from '../../Cards/SkillCard';
+
 const Skill = () => {
 
 	return (

@@ -29,14 +29,15 @@ import {
   const Contact=({navigation})=>{
   //const navigate=useNavigate();
     return (
-      <Container bg="#9DC4FB" maxW="full" mt={0} centerContent overflow="hidden">
+      <Container bg="gray.400" maxW="full" mt={0} >
         <Flex>
           <Box
             bg="#02054B"
             color="white"
             borderRadius="lg"
-            m={{ sm: 4, md: 16, lg: 10 }}
-            p={{ sm: 5, md: 5, lg: 16 }}>
+            align={"flex-start"}
+            m={{ sm: 0, md: 6, lg: 10 }}
+            >
             <Box p={4}>
               <Wrap spacing={{ base: 20, sm: 3, md: 5, lg: 20 }}>
                 <WrapItem>
@@ -158,9 +159,12 @@ import {
                     </Box>
                   </Box>
                 </WrapItem>
+               
               </Wrap>
+              
             </Box>
           </Box>
+          
         </Flex>
       </Container>
     );

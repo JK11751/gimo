@@ -1,1 +1,1 @@
-export const PAGE_LINKS = ['/testimonials','/skills', '/projects', '/contact'];
+export const PAGE_LINKS = ['/about', '/testimonials','/skills', '/projects', '/contact'];

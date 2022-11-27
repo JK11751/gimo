@@ -14,7 +14,8 @@ import { BiLeftArrowAlt, BiRightArrowAlt } from 'react-icons/bi';
 // And react-slick as our Carousel Lib
 import Slider from 'react-slick';
 //import Header from '../Header';
-import Services from './subs/Services';
+import Services from '../Home/subs/Services';
+import Resume from '../Resume/Resume';
 
 // Settings for the slider
 const settings = {
@@ -138,12 +139,13 @@ const Home=()=> {
             rounded={'full'}
             px={6}
             colorScheme={'orange'}
+            onClick={""}
             bg={'orange.400'}
             _hover={{ bg: 'orange.500' }}>
             Get started
           </Button>
           <Button rounded={'full'} px={6}>
-            Learn more
+            <Resume/>
           </Button>
         </Stack>
         </Stack>
