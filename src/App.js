@@ -6,13 +6,12 @@ import {
   Route
 } from "react-router-dom";
 import Footer from './Components/Footer';
-//import Header from './Components/Header';
 import Header from  './Components/Header/Header'
 import Skills from './Components/Skills/Skills';
 import Testimonial from './Components/Testimonials/Testimonials';
 import Contact from './Components/Contact/Contact';
 import Project from './Components/Projects/Project';
-import Home from './Components/Home/Home';
+import LandingPage from './Components/Landing/LandingPage';
 
 const App=()=> {
   return (
@@ -21,12 +20,13 @@ const App=()=> {
    <Router>
    <Header/>
     <Routes>
-  <Route index element={<Home />} />
+  <Route index element={<LandingPage />} />
     <Route
       path="projects"
       element={<Project/>}
     />
-    <Route path="testimonials" element={<Testimonial/>} />
+    <Route 
+    path="testimonials" element={<Testimonial/>} />
   <Route path="contact" element={<Contact/>} />
   <Route path="skills" element={<Skills/>} />
 </Routes>

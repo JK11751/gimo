@@ -14,7 +14,7 @@ import { BiLeftArrowAlt, BiRightArrowAlt } from 'react-icons/bi';
 // And react-slick as our Carousel Lib
 import Slider from 'react-slick';
 //import Header from '../Header';
-import Services from '../Home/subs/Services';
+import Services from './subs/Services';
 import Resume from '../Resume/Resume';
 
 // Settings for the slider
@@ -30,7 +30,7 @@ const settings = {
   slidesToScroll: 1,
 };
 
-const Home=()=> {
+const LandingPage=()=> {
   // As we have used custom buttons, we need a reference variable to
   // change the state
   const [slider, setSlider] = useState(null);
@@ -172,4 +172,4 @@ const Home=()=> {
     </Box>
   );
 }
-export default Home
+export default LandingPage

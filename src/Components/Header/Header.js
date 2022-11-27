@@ -27,7 +27,6 @@ const Header = () => {
 
 	return (
 		<Box
-			p={5}
 			background={useColorModeValue('white', 'gray.900')}
 			shadow='md'
 			borderRadius={{ base: 0, sm: 'md' }}
