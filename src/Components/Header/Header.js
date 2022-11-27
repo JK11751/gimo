@@ -1,10 +1,8 @@
-import { NavLink, useNavigate } from 'react-router-dom';
-import { useBreakpoint } from '@chakra-ui/react';
+import { NavLink } from 'react-router-dom';
 import { Button } from '@chakra-ui/button';
 import { useColorMode, useColorModeValue } from '@chakra-ui/color-mode';
 import { MoonIcon, SunIcon } from '@chakra-ui/icons';
 import { Box, HStack, Text } from '@chakra-ui/layout';
-import { MOBILE_DEVICES } from '../../Utils/constants/Devices';
 import {ROUTES} from '../../Utils/constants/Routes'
 import { SiLinkedin, SiGithub } from 'react-icons/si';
 import { FaFacebook, FaTwitter } from 'react-icons/fa';
@@ -25,17 +23,7 @@ import {
 const Header = () => {
 	const { colorMode, toggleColorMode } = useColorMode();
 	const navMenuColor = useColorModeValue('#000', '#fff');
-	const breakpoint = useBreakpoint();
-	const isMobile = MOBILE_DEVICES.includes(breakpoint);
-	const navigate = useNavigate();
 
-	const navigateHome = () => {
-		if (isMobile) {
-    		document.getElementById('about').scrollIntoView({ behavior: 'smooth' });
-		} else {
-			navigate('/');
-		}
-	}
 
 	return (
 		<Box
@@ -48,7 +36,7 @@ const Header = () => {
 			width={{ base: '100vw', md: '100%' }}
 		>
 			<HStack justifyContent={{ base: 'space-between', md: 'space-around' }}>
-				<Box cursor='pointer' onClick={navigateHome}>
+				<Box cursor='pointer' >
 					<Text>Logo</Text>
 				</Box>
 
