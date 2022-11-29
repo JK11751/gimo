@@ -6,6 +6,7 @@ import { Box, HStack, Text } from '@chakra-ui/layout';
 import {ROUTES} from '../../Utils/constants/Routes'
 import { SiLinkedin, SiGithub } from 'react-icons/si';
 import { FaFacebook, FaTwitter } from 'react-icons/fa';
+import Sidebar from '../Sidebar/Sidebar';
 import {
     Avatar,
     Link,
@@ -18,7 +19,6 @@ import {
   } from '@chakra-ui/react';
 
   import john from "../../Images/gimasejohn.jpg";
-
 
 const Header = () => {
 	const { colorMode, toggleColorMode } = useColorMode();
@@ -36,7 +36,7 @@ const Header = () => {
 		>
 			<HStack justifyContent={{ base: 'space-between', md: 'space-around' }}>
 				<Box cursor='pointer' >
-					<Text>Logo</Text>
+          <Sidebar/>
 				</Box>
 
 				<HStack justifyContent='space-between' spacing={{ base: 4, md: 12 }}>
